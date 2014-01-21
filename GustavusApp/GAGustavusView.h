@@ -1,5 +1,5 @@
 //
-//  GAMasterViewController.h
+//  GAGustavusView.h
 //  GustavusApp
 //
 //  Created by Tucker Saude on 1/8/14.
@@ -8,18 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@interface GAGustavusView : UIImageView
 
-
-
-
-@interface GAMasterViewController : UIViewController <UIScrollViewDelegate>
-
-@property (strong, nonatomic) UIScrollView * mapScrollView;
 @property (nonatomic, strong) UIImage * gustavusImage;
 @property (nonatomic, strong) NSDictionary * buttonInfoDictionary;
-@property (nonatomic, strong) UIImageView * gustavusMap;
+
 
 +(NSArray *)caseArrayforButtons;
-
-
 @end

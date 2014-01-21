@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1B7FF3188B317500E52C80 /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E1B7FF2188B317500E52C80 /* sample.txt */; };
+		1E501729188606D8006A6071 /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E501728188606D8006A6071 /* Building.m */; };
 		1E502DF1187DE67A000075F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502DF0187DE67A000075F9 /* Foundation.framework */; };
 		1E502DF3187DE67A000075F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502DF2187DE67A000075F9 /* CoreGraphics.framework */; };
 		1E502DF5187DE67A000075F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502DF4187DE67A000075F9 /* UIKit.framework */; };
@@ -16,13 +18,26 @@
 		1E502E04187DE67A000075F9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E502E02187DE67A000075F9 /* Main_iPhone.storyboard */; };
 		1E502E07187DE67A000075F9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E502E05187DE67A000075F9 /* Main_iPad.storyboard */; };
 		1E502E0A187DE67A000075F9 /* GAMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E09187DE67A000075F9 /* GAMasterViewController.m */; };
-		1E502E0D187DE67A000075F9 /* GADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E0C187DE67A000075F9 /* GADetailViewController.m */; };
 		1E502E0F187DE67A000075F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E502E0E187DE67A000075F9 /* Images.xcassets */; };
 		1E502E16187DE67A000075F9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502E15187DE67A000075F9 /* XCTest.framework */; };
 		1E502E17187DE67A000075F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502DF0187DE67A000075F9 /* Foundation.framework */; };
 		1E502E18187DE67A000075F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502DF4187DE67A000075F9 /* UIKit.framework */; };
 		1E502E20187DE67A000075F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E502E1E187DE67A000075F9 /* InfoPlist.strings */; };
 		1E502E22187DE67A000075F9 /* GustavusAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E21187DE67A000075F9 /* GustavusAppTests.m */; };
+		1E502E36187DE7B2000075F9 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E2D187DE7B2000075F9 /* NSData+MD5.m */; };
+		1E502E37187DE7B2000075F9 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E2F187DE7B2000075F9 /* NSString+MD5.m */; };
+		1E502E38187DE7B2000075F9 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E31187DE7B2000075F9 /* PDFView.m */; };
+		1E502E39187DE7B2000075F9 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E33187DE7B2000075F9 /* UIImage+PDF.m */; };
+		1E502E3A187DE7B2000075F9 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E35187DE7B2000075F9 /* UIView+Image.m */; };
+		1E502E3C187DE89F000075F9 /* gustavus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1E502E3B187DE89F000075F9 /* gustavus.pdf */; };
+		1E502E83187E21E2000075F9 /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E80187E21E2000075F9 /* PDFScrollView.m */; };
+		1E502E84187E21E2000075F9 /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E502E82187E21E2000075F9 /* TiledPDFView.m */; };
+		1E502E86187E2A13000075F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502E85187E2A13000075F9 /* QuartzCore.framework */; };
+		1E5B079A18844B0F000578F5 /* GABuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B079918844B0F000578F5 /* GABuildingViewController.m */; };
+		1E5B07A41884ADF9000578F5 /* buildingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B07A31884ADF9000578F5 /* buildingInfo.plist */; };
+		1E9D2E6918899E6100D91FCD /* GABuildingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D2E6818899E6100D91FCD /* GABuildingManager.m */; };
+		1EB085E5188C687900DD1224 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB085E4188C687900DD1224 /* A3ParallaxScrollView.m */; };
+		1EB085E9188C7FCD00DD1224 /* Chapel-Winter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1B7FF2188B317500E52C80 /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		1E501727188606D8006A6071 /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Building.h; path = ../Building.h; sourceTree = "<group>"; };
+		1E501728188606D8006A6071 /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Building.m; path = ../Building.m; sourceTree = "<group>"; };
 		1E502DED187DE67A000075F9 /* GustavusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GustavusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E502DF0187DE67A000075F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E502DF2187DE67A000075F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,14 +68,36 @@
 		1E502E06187DE67A000075F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		1E502E08187DE67A000075F9 /* GAMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAMasterViewController.h; sourceTree = "<group>"; };
 		1E502E09187DE67A000075F9 /* GAMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAMasterViewController.m; sourceTree = "<group>"; };
-		1E502E0B187DE67A000075F9 /* GADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADetailViewController.h; sourceTree = "<group>"; };
-		1E502E0C187DE67A000075F9 /* GADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADetailViewController.m; sourceTree = "<group>"; };
 		1E502E0E187DE67A000075F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1E502E14187DE67A000075F9 /* GustavusAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GustavusAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E502E15187DE67A000075F9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1E502E1D187DE67A000075F9 /* GustavusAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GustavusAppTests-Info.plist"; sourceTree = "<group>"; };
 		1E502E1F187DE67A000075F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E502E21187DE67A000075F9 /* GustavusAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GustavusAppTests.m; sourceTree = "<group>"; };
+		1E502E2C187DE7B2000075F9 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		1E502E2D187DE7B2000075F9 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		1E502E2E187DE7B2000075F9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		1E502E2F187DE7B2000075F9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		1E502E30187DE7B2000075F9 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		1E502E31187DE7B2000075F9 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		1E502E32187DE7B2000075F9 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		1E502E33187DE7B2000075F9 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		1E502E34187DE7B2000075F9 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		1E502E35187DE7B2000075F9 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		1E502E3B187DE89F000075F9 /* gustavus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gustavus.pdf; sourceTree = "<group>"; };
+		1E502E7F187E21E2000075F9 /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
+		1E502E80187E21E2000075F9 /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
+		1E502E81187E21E2000075F9 /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
+		1E502E82187E21E2000075F9 /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
+		1E502E85187E2A13000075F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1E5B079818844B0F000578F5 /* GABuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingViewController.h; sourceTree = "<group>"; };
+		1E5B079918844B0F000578F5 /* GABuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingViewController.m; sourceTree = "<group>"; };
+		1E5B07A31884ADF9000578F5 /* buildingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = buildingInfo.plist; sourceTree = "<group>"; };
+		1E9D2E6718899E6100D91FCD /* GABuildingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingManager.h; sourceTree = "<group>"; };
+		1E9D2E6818899E6100D91FCD /* GABuildingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingManager.m; sourceTree = "<group>"; };
+		1EB085E3188C687900DD1224 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3ParallaxScrollView.h; sourceTree = "<group>"; };
+		1EB085E4188C687900DD1224 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3ParallaxScrollView.m; sourceTree = "<group>"; };
+		1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chapel-Winter@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E502E86187E2A13000075F9 /* QuartzCore.framework in Frameworks */,
 				1E502DF3187DE67A000075F9 /* CoreGraphics.framework in Frameworks */,
 				1E502DF5187DE67A000075F9 /* UIKit.framework in Frameworks */,
 				1E502DF1187DE67A000075F9 /* Foundation.framework in Frameworks */,
@@ -84,6 +125,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E50172618860683006A6071 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E502E08187DE67A000075F9 /* GAMasterViewController.h */,
+				1E502E09187DE67A000075F9 /* GAMasterViewController.m */,
+				1E5B079818844B0F000578F5 /* GABuildingViewController.h */,
+				1E5B079918844B0F000578F5 /* GABuildingViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1E50172A188606E5006A6071 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E501727188606D8006A6071 /* Building.h */,
+				1E501728188606D8006A6071 /* Building.m */,
+				1E9D2E6718899E6100D91FCD /* GABuildingManager.h */,
+				1E9D2E6818899E6100D91FCD /* GABuildingManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		1E502DE4187DE67A000075F9 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +154,9 @@
 				1E502E1B187DE67A000075F9 /* GustavusAppTests */,
 				1E502DEF187DE67A000075F9 /* Frameworks */,
 				1E502DEE187DE67A000075F9 /* Products */,
+				1E502E7E187E21C0000075F9 /* PDFScrollView */,
+				1EB085E2188C687900DD1224 /* A3ParallaxScrollView */,
+				1E502E2B187DE797000075F9 /* UIImage+PDF */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +172,7 @@
 		1E502DEF187DE67A000075F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E502E85187E2A13000075F9 /* QuartzCore.framework */,
 				1E502DF0187DE67A000075F9 /* Foundation.framework */,
 				1E502DF2187DE67A000075F9 /* CoreGraphics.framework */,
 				1E502DF4187DE67A000075F9 /* UIKit.framework */,
@@ -121,10 +188,8 @@
 				1E502E00187DE67A000075F9 /* GAAppDelegate.m */,
 				1E502E02187DE67A000075F9 /* Main_iPhone.storyboard */,
 				1E502E05187DE67A000075F9 /* Main_iPad.storyboard */,
-				1E502E08187DE67A000075F9 /* GAMasterViewController.h */,
-				1E502E09187DE67A000075F9 /* GAMasterViewController.m */,
-				1E502E0B187DE67A000075F9 /* GADetailViewController.h */,
-				1E502E0C187DE67A000075F9 /* GADetailViewController.m */,
+				1E50172A188606E5006A6071 /* Model */,
+				1E50172618860683006A6071 /* ViewControllers */,
 				1E502E0E187DE67A000075F9 /* Images.xcassets */,
 				1E502DF7187DE67A000075F9 /* Supporting Files */,
 			);
@@ -134,6 +199,10 @@
 		1E502DF7187DE67A000075F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */,
+				1E1B7FF2188B317500E52C80 /* sample.txt */,
+				1E5B07A31884ADF9000578F5 /* buildingInfo.plist */,
+				1E502E3B187DE89F000075F9 /* gustavus.pdf */,
 				1E502DF8187DE67A000075F9 /* GustavusApp-Info.plist */,
 				1E502DF9187DE67A000075F9 /* InfoPlist.strings */,
 				1E502DFC187DE67A000075F9 /* main.m */,
@@ -158,6 +227,43 @@
 				1E502E1E187DE67A000075F9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E502E2B187DE797000075F9 /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				1E502E2C187DE7B2000075F9 /* NSData+MD5.h */,
+				1E502E2D187DE7B2000075F9 /* NSData+MD5.m */,
+				1E502E2E187DE7B2000075F9 /* NSString+MD5.h */,
+				1E502E2F187DE7B2000075F9 /* NSString+MD5.m */,
+				1E502E30187DE7B2000075F9 /* PDFView.h */,
+				1E502E31187DE7B2000075F9 /* PDFView.m */,
+				1E502E32187DE7B2000075F9 /* UIImage+PDF.h */,
+				1E502E33187DE7B2000075F9 /* UIImage+PDF.m */,
+				1E502E34187DE7B2000075F9 /* UIView+Image.h */,
+				1E502E35187DE7B2000075F9 /* UIView+Image.m */,
+			);
+			name = "UIImage+PDF";
+			sourceTree = "<group>";
+		};
+		1E502E7E187E21C0000075F9 /* PDFScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1E502E7F187E21E2000075F9 /* PDFScrollView.h */,
+				1E502E80187E21E2000075F9 /* PDFScrollView.m */,
+				1E502E81187E21E2000075F9 /* TiledPDFView.h */,
+				1E502E82187E21E2000075F9 /* TiledPDFView.m */,
+			);
+			name = PDFScrollView;
+			sourceTree = "<group>";
+		};
+		1EB085E2188C687900DD1224 /* A3ParallaxScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1EB085E3188C687900DD1224 /* A3ParallaxScrollView.h */,
+				1EB085E4188C687900DD1224 /* A3ParallaxScrollView.m */,
+			);
+			path = A3ParallaxScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +314,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tucker Saude";
 				TargetAttributes = {
+					1E502DEC187DE67A000075F9 = {
+						DevelopmentTeam = WXBH4AY56B;
+					};
 					1E502E13187DE67A000075F9 = {
 						TestTargetID = 1E502DEC187DE67A000075F9;
 					};
@@ -237,10 +346,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5B07A41884ADF9000578F5 /* buildingInfo.plist in Resources */,
+				1E502E3C187DE89F000075F9 /* gustavus.pdf in Resources */,
 				1E502E07187DE67A000075F9 /* Main_iPad.storyboard in Resources */,
 				1E502E0F187DE67A000075F9 /* Images.xcassets in Resources */,
+				1E1B7FF3188B317500E52C80 /* sample.txt in Resources */,
 				1E502E04187DE67A000075F9 /* Main_iPhone.storyboard in Resources */,
 				1E502DFB187DE67A000075F9 /* InfoPlist.strings in Resources */,
+				1EB085E9188C7FCD00DD1224 /* Chapel-Winter@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +372,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E502E84187E21E2000075F9 /* TiledPDFView.m in Sources */,
+				1E502E83187E21E2000075F9 /* PDFScrollView.m in Sources */,
+				1E5B079A18844B0F000578F5 /* GABuildingViewController.m in Sources */,
+				1E502E37187DE7B2000075F9 /* NSString+MD5.m in Sources */,
+				1EB085E5188C687900DD1224 /* A3ParallaxScrollView.m in Sources */,
+				1E502E3A187DE7B2000075F9 /* UIView+Image.m in Sources */,
+				1E9D2E6918899E6100D91FCD /* GABuildingManager.m in Sources */,
 				1E502E0A187DE67A000075F9 /* GAMasterViewController.m in Sources */,
-				1E502E0D187DE67A000075F9 /* GADetailViewController.m in Sources */,
 				1E502E01187DE67A000075F9 /* GAAppDelegate.m in Sources */,
 				1E502DFD187DE67A000075F9 /* main.m in Sources */,
+				1E502E38187DE7B2000075F9 /* PDFView.m in Sources */,
+				1E502E39187DE7B2000075F9 /* UIImage+PDF.m in Sources */,
+				1E502E36187DE7B2000075F9 /* NSData+MD5.m in Sources */,
+				1E501729188606D8006A6071 /* Building.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GustavusApp/GustavusApp-Prefix.pch";
 				INFOPLIST_FILE = "GustavusApp/GustavusApp-Info.plist";
@@ -412,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GustavusApp/GustavusApp-Prefix.pch";
 				INFOPLIST_FILE = "GustavusApp/GustavusApp-Info.plist";
@@ -481,6 +606,7 @@
 				1E502E27187DE67A000075F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E502E28187DE67A000075F9 /* Build configuration list for PBXNativeTarget "GustavusAppTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +615,7 @@
 				1E502E2A187DE67A000075F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
