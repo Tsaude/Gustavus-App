@@ -19,12 +19,11 @@
 
 @implementation GABuildingViewController{
     UITextView * _textView;
+    UINavigationBar * _navBar;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    //[[self navigationController] setNavigationBarHidden:NO];
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
-    self.navigationController.navigationBar.translucent = NO;
+    
 }
 
 
@@ -32,11 +31,24 @@
 {
     [super viewDidLoad];
     //navigation bar
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    self.navigationItem.title = self.building.title;
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonSystemItemStop target:nil action:nil];
+    _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+   // [_navBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+   // _navBar.shadowImage = [UIImage new];
+    [_navBar setBarTintColor:[UIColor darkTextColor]];
+    _navBar.translucent = YES;
+    UIBarButtonItem * back = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(dismissBuildingView)];
+    UINavigationItem * titleItem = [[UINavigationItem alloc] initWithTitle:self.building.title];
+    [titleItem setLeftBarButtonItem:back];
+
+    _navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     
-    NSLog(@"%@, %@", self.navigationItem.title, self.building.title);
+    _navBar.items = @[titleItem];
+    
+    
+    [self.view addSubview:_navBar];
+    
+    
+    NSLog(@"%@, %@", _navBar.topItem.title, self.building.title);
 
     
     //getting image
@@ -61,7 +73,7 @@
     [_textView setScrollEnabled:NO];
     [_textView setUserInteractionEnabled:NO];
     [_textView sizeToFit];
-    NSLog(@"%f, %f", textSize.height, textSize.width);
+    //NSLog(@"%f, %f", textSize.height, textSize.width);
     //building the scrollview
 
     [self.scrollView addSubview:imageView withAcceleration:(CGPoint){0.5f, 0.5f}];
@@ -72,7 +84,7 @@
     
 }
 
-- (IBAction)dismissBuildingView:(id)sender {
+- (void)dismissBuildingView {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 

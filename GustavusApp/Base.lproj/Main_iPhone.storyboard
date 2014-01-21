@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ArR-bb-KRQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="brM-Mg-9Cd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="eA7-dr-TMb">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="ArR-bb-KRQ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="29Y-2E-r5q">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PwN-L9-ZnQ">
-                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="brM-Mg-9Cd" kind="relationship" relationship="rootViewController" id="D71-74-40b"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GcV-l1-SkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="158" y="86"/>
-        </scene>
         <!--Master View Controller-->
         <scene sceneID="neb-ek-9j6">
             <objects>
@@ -32,16 +13,13 @@
                         <viewControllerLayoutGuide type="bottom" id="NGa-ln-AK7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0qM-y0-bCq">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.66274509803921566" green="0.70196078431372544" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Y5R-lY-YDt">
                         <barButtonItem key="backBarButtonItem" title=" " id="aN7-0i-aXP"/>
                     </navigationItem>
-                    <connections>
-                        <segue destination="i24-EA-FKG" kind="push" identifier="building" id="JXx-4D-csq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmB-Bx-uxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,23 +28,24 @@
         <!--Building View Controller-->
         <scene sceneID="Csc-35-9i2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXB-oA-9BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="buildingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i24-EA-FKG" customClass="GABuildingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I0m-rW-X6A"/>
                         <viewControllerLayoutGuide type="bottom" id="jFS-JG-CHJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gjb-Vv-kb8">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adw-Ou-uYY" customClass="A3ParallaxScrollView">
-                                <rect key="frame" x="0.0" y="-64" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="adw-Ou-uYY" firstAttribute="top" secondItem="I0m-rW-X6A" secondAttribute="bottom" constant="-64" id="nLM-zv-zFV"/>
+                            <constraint firstItem="adw-Ou-uYY" firstAttribute="top" secondItem="I0m-rW-X6A" secondAttribute="bottom" id="nLM-zv-zFV"/>
                             <constraint firstItem="jFS-JG-CHJ" firstAttribute="top" secondItem="adw-Ou-uYY" secondAttribute="bottom" id="t00-5a-Dlh"/>
                         </constraints>
                     </view>
@@ -77,7 +56,6 @@
                         <outlet property="scrollView" destination="adw-Ou-uYY" id="2jr-tX-gbU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gXB-oA-9BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1106" y="86"/>
         </scene>

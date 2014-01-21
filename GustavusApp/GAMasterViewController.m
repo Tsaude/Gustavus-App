@@ -19,7 +19,9 @@
 }
 @end
 
-@implementation GAMasterViewController
+@implementation GAMasterViewController{
+    UINavigationBar * _navBar;
+}
 
 
 
@@ -28,8 +30,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    //[self.navigationController setNavigationBarHidden:YES animated:YES];
-
+    //nav bar
+    _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+    [_navBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+     _navBar.shadowImage = [UIImage new];
+    [_navBar setBarTintColor:[UIColor darkTextColor]];
+    _navBar.translucent = YES;
+    UINavigationItem * titleItem = [[UINavigationItem alloc] initWithTitle:@"map"];
+    _navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    _navBar.items = @[titleItem];
+    
+    
     CGRect screenRect = self.view.bounds;
     self.gustavusMap = [[UIImageView alloc]initWithImage:[UIImage imageWithPDFNamed:@"gustavus.pdf"
                                                                            atHeight:800.0]];
@@ -45,7 +56,7 @@
     [self setUpButtons];
     
     [self.view addSubview:self.mapScrollView];
-
+    [self.view addSubview:_navBar];
     
     
 }
@@ -134,8 +145,16 @@
 
 
 -(IBAction)buttonClicked:(id)sender{
-
-    [self performSegueWithIdentifier: @"building" sender: sender];
+    UIButton * button = (UIButton * )sender;
+    
+    NSLog(@"button clicked %ld", (long)button.tag);
+    Building * building = [[Building alloc]initWithName:[GAMasterViewController caseArrayforButtons][button.tag]];
+    NSLog(@"%@", building.title);
+    UIStoryboard * storyboard = self.storyboard;
+    GABuildingViewController * buildingViewController =(GABuildingViewController *)[storyboard instantiateViewControllerWithIdentifier:@"buildingViewController"];
+    [buildingViewController setBuilding:building];
+    [self presentViewController:buildingViewController animated:YES completion:nil];
+    //[self performSegueWithIdentifier: @"building" sender: sender];
 }
 
 
