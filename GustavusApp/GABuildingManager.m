@@ -43,7 +43,7 @@
                                               format:&format
                                               errorDescription:&errorDesc];
         if (!temp) {
-            NSLog(@"Error reading plist: %@, format: %lu", errorDesc, format);
+            NSLog(@"Error reading plist: %@", errorDesc);
         }
         self.buildingInfo = temp;
         //NSLog(@"%@",self.buildingInfo);

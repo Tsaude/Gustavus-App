@@ -17,9 +17,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.66274509803921566" green="0.70196078431372544" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Y5R-lY-YDt">
-                        <barButtonItem key="backBarButtonItem" title=" " id="aN7-0i-aXP"/>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmB-Bx-uxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,7 +25,6 @@
         <!--Building View Controller-->
         <scene sceneID="Csc-35-9i2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gXB-oA-9BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="buildingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i24-EA-FKG" customClass="GABuildingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I0m-rW-X6A"/>
@@ -38,24 +34,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adw-Ou-uYY" customClass="A3ParallaxScrollView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adw-Ou-uYY" customClass="A3ParallaxScrollView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="adw-Ou-uYY" firstAttribute="leading" secondItem="gjb-Vv-kb8" secondAttribute="leading" id="GzD-bx-SMX"/>
+                            <constraint firstAttribute="trailing" secondItem="adw-Ou-uYY" secondAttribute="trailing" id="mGJ-yO-6MO"/>
                             <constraint firstItem="adw-Ou-uYY" firstAttribute="top" secondItem="I0m-rW-X6A" secondAttribute="bottom" id="nLM-zv-zFV"/>
                             <constraint firstItem="jFS-JG-CHJ" firstAttribute="top" secondItem="adw-Ou-uYY" secondAttribute="bottom" id="t00-5a-Dlh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="q2Y-tq-Pc2">
-                        <barButtonItem key="backBarButtonItem" title=" " style="plain" id="PCZ-E5-QAr"/>
-                    </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="adw-Ou-uYY" id="2jr-tX-gbU"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXB-oA-9BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1106" y="86"/>
         </scene>

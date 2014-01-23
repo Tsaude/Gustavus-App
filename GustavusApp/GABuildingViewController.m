@@ -27,32 +27,38 @@
 }
 
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //navigation bar
+    //building Navigation Bar
+    
     _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
-   // [_navBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-   // _navBar.shadowImage = [UIImage new];
     [_navBar setBarTintColor:[UIColor darkTextColor]];
     _navBar.translucent = YES;
     UIBarButtonItem * back = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(dismissBuildingView)];
     UINavigationItem * titleItem = [[UINavigationItem alloc] initWithTitle:self.building.title];
     [titleItem setLeftBarButtonItem:back];
-
     _navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
-    
     _navBar.items = @[titleItem];
-    
-    
     [self.view addSubview:_navBar];
     
     
-    NSLog(@"%@, %@", _navBar.topItem.title, self.building.title);
-
-    
     //getting image
-    UIImage * image = [UIImage imageNamed:@"Chapel-Winter.png"];
+    UIImage * image;
+
+
+    image = [UIImage imageNamed:@"oldMain.png"];
+    NSLog(@"%@", image);
+    if(!image){
+        
+        
+        image = [UIImage imageNamed:@"Chapel-Winter.png"];
+        NSLog(@"%@", image);
+        
+        
+    }
+
     UIImageView * imageView = [[UIImageView alloc]initWithImage:image];
     
     
@@ -73,15 +79,11 @@
     [_textView setScrollEnabled:NO];
     [_textView setUserInteractionEnabled:NO];
     [_textView sizeToFit];
-    //NSLog(@"%f, %f", textSize.height, textSize.width);
     //building the scrollview
 
     [self.scrollView addSubview:imageView withAcceleration:(CGPoint){0.5f, 0.5f}];
     [self.scrollView addSubview:_textView];
     [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, _textView.frame.size.height +imageView.frame.size.height*.75)];
-    
-
-    
 }
 
 - (void)dismissBuildingView {

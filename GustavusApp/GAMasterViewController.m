@@ -11,7 +11,6 @@
 #import "UIImage+PDF.h"
 #import "GABuildingViewController.h"
 
-#import "PDFScrollView.h"
 
 
 @interface GAMasterViewController () {
@@ -40,7 +39,7 @@
     _navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     _navBar.items = @[titleItem];
     
-    
+    //setting up map
     CGRect screenRect = self.view.bounds;
     self.gustavusMap = [[UIImageView alloc]initWithImage:[UIImage imageWithPDFNamed:@"gustavus.pdf"
                                                                            atHeight:800.0]];
@@ -62,18 +61,6 @@
 }
 
 
-
-
-
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    UITouch * touch = [touches anyObject];
-    CGPoint point = [touch locationInView:touch.view];
-    NSLog(@"X location: %f", point.x);
-    NSLog(@"Y Location: %f",point.y);
-}
-
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"building"]) {
@@ -82,20 +69,9 @@
         NSLog(@"button clicked %ld", (long)button.tag);
         Building * building = [[Building alloc]initWithName:[GAMasterViewController caseArrayforButtons][button.tag]];
         NSLog(@"%@", building.title);
-//        UIStoryboard * storyboard = self.storyboard;
-//        GABuildingViewController * buildingViewController =(GABuildingViewController *)[storyboard instantiateViewControllerWithIdentifier:@"buildingViewController"];
-
+        
         [segue.destinationViewController setBuilding:building];
     }
-}
-
--(void)viewWillAppear:(BOOL)animated{
-    //[self.navigationController setNavigationBarHidden:YES];
-    
-    [super viewWillDisappear:YES];
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-    self.navigationController.navigationBar.translucent= YES;
-    
 }
 
 
@@ -103,8 +79,6 @@
 -(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return UIInterfaceOrientationPortrait;
 }
-
-
 
 - (NSUInteger)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskPortrait;
@@ -119,7 +93,6 @@
     NSLog(@"settingUpButtons");
     if ([[GABuildingManager sharedManager] buildingInfo]) {
         for (NSString * key in [[GABuildingManager sharedManager] buildingInfo]) {
-            NSLog(@"%@" ,key);
             NSArray* framePointArray = [[[GABuildingManager sharedManager] buildingInfo][key] objectForKey:@"frameRect"];
             UIButton * button;
             button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -154,7 +127,6 @@
     GABuildingViewController * buildingViewController =(GABuildingViewController *)[storyboard instantiateViewControllerWithIdentifier:@"buildingViewController"];
     [buildingViewController setBuilding:building];
     [self presentViewController:buildingViewController animated:YES completion:nil];
-    //[self performSegueWithIdentifier: @"building" sender: sender];
 }
 
 
