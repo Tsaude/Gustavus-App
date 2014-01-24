@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E09B5B71891AEE6005C875A /* oldMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E09B5B61891AEE6005C875A /* oldMain.png */; };
+		1E1053CB1891B46700FB472B /* oldMain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053CA1891B46700FB472B /* oldMain@2x.png */; };
+		1E1053CF1891BA0900FB472B /* oldMain.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053CE1891BA0900FB472B /* oldMain.html */; };
+		1E1053D11891DF2200FB472B /* oldMain.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053D01891DF2200FB472B /* oldMain.rtf */; };
+		1E1053D31891E10800FB472B /* sample.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053D21891E10800FB472B /* sample.rtf */; };
+		1E1053D61891F52B00FB472B /* GABuildingImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */; };
 		1E1B7FF3188B317500E52C80 /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E1B7FF2188B317500E52C80 /* sample.txt */; };
 		1E501729188606D8006A6071 /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E501728188606D8006A6071 /* Building.m */; };
 		1E502DF1187DE67A000075F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502DF0187DE67A000075F9 /* Foundation.framework */; };
@@ -33,8 +37,7 @@
 		1E502E3C187DE89F000075F9 /* gustavus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1E502E3B187DE89F000075F9 /* gustavus.pdf */; };
 		1E502E86187E2A13000075F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E502E85187E2A13000075F9 /* QuartzCore.framework */; };
 		1E5B079A18844B0F000578F5 /* GABuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B079918844B0F000578F5 /* GABuildingViewController.m */; };
-		1E5B07A41884ADF9000578F5 /* buildingInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B07A31884ADF9000578F5 /* buildingInfo.plist */; };
-		1E7CC26E188F654A00D1B9B9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CC26D188F654A00D1B9B9 /* SWRevealViewController.m */; };
+		1E5B07A41884ADF9000578F5 /* buildings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B07A31884ADF9000578F5 /* buildings.plist */; };
 		1E9D2E6918899E6100D91FCD /* GABuildingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D2E6818899E6100D91FCD /* GABuildingManager.m */; };
 		1EB085E5188C687900DD1224 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB085E4188C687900DD1224 /* A3ParallaxScrollView.m */; };
 		1EB085E9188C7FCD00DD1224 /* Chapel-Winter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */; };
@@ -51,7 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E09B5B61891AEE6005C875A /* oldMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oldMain.png; sourceTree = "<group>"; };
+		1E1053CA1891B46700FB472B /* oldMain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oldMain@2x.png"; sourceTree = "<group>"; };
+		1E1053CE1891BA0900FB472B /* oldMain.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = oldMain.html; sourceTree = "<group>"; };
+		1E1053D01891DF2200FB472B /* oldMain.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = oldMain.rtf; sourceTree = "<group>"; };
+		1E1053D21891E10800FB472B /* sample.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = sample.rtf; sourceTree = "<group>"; };
+		1E1053D41891F52B00FB472B /* GABuildingImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingImagesViewController.h; sourceTree = "<group>"; };
+		1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingImagesViewController.m; sourceTree = "<group>"; };
 		1E1B7FF2188B317500E52C80 /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
 		1E501727188606D8006A6071 /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Building.h; path = ../Building.h; sourceTree = "<group>"; };
 		1E501728188606D8006A6071 /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Building.m; path = ../Building.m; sourceTree = "<group>"; };
@@ -89,9 +97,7 @@
 		1E502E85187E2A13000075F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1E5B079818844B0F000578F5 /* GABuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingViewController.h; sourceTree = "<group>"; };
 		1E5B079918844B0F000578F5 /* GABuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingViewController.m; sourceTree = "<group>"; };
-		1E5B07A31884ADF9000578F5 /* buildingInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = buildingInfo.plist; sourceTree = "<group>"; };
-		1E7CC26C188F654A00D1B9B9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		1E7CC26D188F654A00D1B9B9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1E5B07A31884ADF9000578F5 /* buildings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = buildings.plist; sourceTree = "<group>"; };
 		1E9D2E6718899E6100D91FCD /* GABuildingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingManager.h; sourceTree = "<group>"; };
 		1E9D2E6818899E6100D91FCD /* GABuildingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingManager.m; sourceTree = "<group>"; };
 		1EB085E3188C687900DD1224 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3ParallaxScrollView.h; sourceTree = "<group>"; };
@@ -127,7 +133,8 @@
 		1E09B5B51891AED8005C875A /* Building Images */ = {
 			isa = PBXGroup;
 			children = (
-				1E09B5B61891AEE6005C875A /* oldMain.png */,
+				1E1053CA1891B46700FB472B /* oldMain@2x.png */,
+				1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */,
 			);
 			name = "Building Images";
 			sourceTree = "<group>";
@@ -139,6 +146,8 @@
 				1E502E09187DE67A000075F9 /* GAMasterViewController.m */,
 				1E5B079818844B0F000578F5 /* GABuildingViewController.h */,
 				1E5B079918844B0F000578F5 /* GABuildingViewController.m */,
+				1E1053D41891F52B00FB472B /* GABuildingImagesViewController.h */,
+				1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -161,7 +170,6 @@
 				1E502E1B187DE67A000075F9 /* GustavusAppTests */,
 				1E502DEF187DE67A000075F9 /* Frameworks */,
 				1E502DEE187DE67A000075F9 /* Products */,
-				1E7CC26B188F654A00D1B9B9 /* SWRevealViewController */,
 				1EB085E2188C687900DD1224 /* A3ParallaxScrollView */,
 				1E502E2B187DE797000075F9 /* UIImage+PDF */,
 			);
@@ -208,7 +216,7 @@
 		1E502DF7187DE67A000075F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E5B07A31884ADF9000578F5 /* buildingInfo.plist */,
+				1E5B07A31884ADF9000578F5 /* buildings.plist */,
 				1E502E3B187DE89F000075F9 /* gustavus.pdf */,
 				1E502DF8187DE67A000075F9 /* GustavusApp-Info.plist */,
 				1E502DF9187DE67A000075F9 /* InfoPlist.strings */,
@@ -253,15 +261,6 @@
 			name = "UIImage+PDF";
 			sourceTree = "<group>";
 		};
-		1E7CC26B188F654A00D1B9B9 /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1E7CC26C188F654A00D1B9B9 /* SWRevealViewController.h */,
-				1E7CC26D188F654A00D1B9B9 /* SWRevealViewController.m */,
-			);
-			path = SWRevealViewController;
-			sourceTree = "<group>";
-		};
 		1EB085E2188C687900DD1224 /* A3ParallaxScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				1E09B5B51891AED8005C875A /* Building Images */,
-				1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -283,7 +281,10 @@
 		1EB1AC8C188F239B00E7CE18 /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				1E1053CE1891BA0900FB472B /* oldMain.html */,
 				1E1B7FF2188B317500E52C80 /* sample.txt */,
+				1E1053D01891DF2200FB472B /* oldMain.rtf */,
+				1E1053D21891E10800FB472B /* sample.rtf */,
 			);
 			name = Text;
 			sourceTree = "<group>";
@@ -368,14 +369,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5B07A41884ADF9000578F5 /* buildingInfo.plist in Resources */,
+				1E5B07A41884ADF9000578F5 /* buildings.plist in Resources */,
+				1E1053D11891DF2200FB472B /* oldMain.rtf in Resources */,
 				1E502E3C187DE89F000075F9 /* gustavus.pdf in Resources */,
+				1E1053CF1891BA0900FB472B /* oldMain.html in Resources */,
 				1E502E07187DE67A000075F9 /* Main_iPad.storyboard in Resources */,
-				1E09B5B71891AEE6005C875A /* oldMain.png in Resources */,
+				1E1053CB1891B46700FB472B /* oldMain@2x.png in Resources */,
 				1E502E0F187DE67A000075F9 /* Images.xcassets in Resources */,
 				1E1B7FF3188B317500E52C80 /* sample.txt in Resources */,
 				1E502E04187DE67A000075F9 /* Main_iPhone.storyboard in Resources */,
 				1E502DFB187DE67A000075F9 /* InfoPlist.strings in Resources */,
+				1E1053D31891E10800FB472B /* sample.rtf in Resources */,
 				1EB085E9188C7FCD00DD1224 /* Chapel-Winter@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E7CC26E188F654A00D1B9B9 /* SWRevealViewController.m in Sources */,
 				1E5B079A18844B0F000578F5 /* GABuildingViewController.m in Sources */,
 				1E502E37187DE7B2000075F9 /* NSString+MD5.m in Sources */,
 				1EB085E5188C687900DD1224 /* A3ParallaxScrollView.m in Sources */,
@@ -407,6 +410,7 @@
 				1E502E38187DE7B2000075F9 /* PDFView.m in Sources */,
 				1E502E39187DE7B2000075F9 /* UIImage+PDF.m in Sources */,
 				1E502E36187DE7B2000075F9 /* NSData+MD5.m in Sources */,
+				1E1053D61891F52B00FB472B /* GABuildingImagesViewController.m in Sources */,
 				1E501729188606D8006A6071 /* Building.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,18 +61,18 @@
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"building"]) {
-        UIButton * button = (UIButton * )sender;
-        
-        NSLog(@"button clicked %ld", (long)button.tag);
-        Building * building = [[Building alloc]initWithName:[GAMasterViewController caseArrayforButtons][button.tag]];
-        NSLog(@"%@", building.title);
-        
-        [segue.destinationViewController setBuilding:building];
-    }
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([[segue identifier] isEqualToString:@"building"]) {
+//        UIButton * button = (UIButton * )sender;
+//        
+//        NSLog(@"button clicked %ld", (long)button.tag);
+//        Building * building = [[Building alloc]initWithName:[GAMasterViewController caseArrayforButtons][button.tag]];
+//        NSLog(@"%@", building.title);
+//        
+//        [segue.destinationViewController setBuilding:building];
+//    }
+//}
 
 
 

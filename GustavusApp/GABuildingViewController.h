@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Building.h"
 
-@interface GABuildingViewController : UIViewController <UITextViewDelegate>
+@interface GABuildingViewController : UIViewController <UITextViewDelegate, UITableViewDelegate ,UITableViewDataSource>
 
 @property (strong, nonatomic) Building * building;
 

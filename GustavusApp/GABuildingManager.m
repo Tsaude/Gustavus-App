@@ -32,9 +32,9 @@
                                                                   NSUserDomainMask,YES)
                               objectAtIndex:0];
         
-        plistPath = [rootPath stringByAppendingPathComponent:@"buildingInfo.plist"];
+        plistPath = [rootPath stringByAppendingPathComponent:@"buildings.plist"];
         if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-            plistPath = [[NSBundle mainBundle] pathForResource:@"buildingInfo" ofType:@"plist"];
+            plistPath = [[NSBundle mainBundle] pathForResource:@"buildings" ofType:@"plist"];
         }
         NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
         NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
