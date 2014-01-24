@@ -54,55 +54,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E1053CA1891B46700FB472B /* oldMain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oldMain@2x.png"; sourceTree = "<group>"; };
+		1E1053CA1891B46700FB472B /* oldMain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "oldMain@2x.png"; path = "Images/oldMain@2x.png"; sourceTree = "<group>"; };
 		1E1053CE1891BA0900FB472B /* oldMain.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = oldMain.html; sourceTree = "<group>"; };
 		1E1053D01891DF2200FB472B /* oldMain.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = oldMain.rtf; sourceTree = "<group>"; };
 		1E1053D21891E10800FB472B /* sample.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = sample.rtf; sourceTree = "<group>"; };
-		1E1053D41891F52B00FB472B /* GABuildingImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingImagesViewController.h; sourceTree = "<group>"; };
-		1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingImagesViewController.m; sourceTree = "<group>"; };
+		1E1053D41891F52B00FB472B /* GABuildingImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GABuildingImagesViewController.h; path = Controller/GABuildingImagesViewController.h; sourceTree = "<group>"; };
+		1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GABuildingImagesViewController.m; path = Controller/GABuildingImagesViewController.m; sourceTree = "<group>"; };
 		1E1B7FF2188B317500E52C80 /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
-		1E501727188606D8006A6071 /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Building.h; path = ../Building.h; sourceTree = "<group>"; };
-		1E501728188606D8006A6071 /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Building.m; path = ../Building.m; sourceTree = "<group>"; };
+		1E501727188606D8006A6071 /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Building.h; path = Model/Building.h; sourceTree = "<group>"; };
+		1E501728188606D8006A6071 /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Building.m; path = Model/Building.m; sourceTree = "<group>"; };
 		1E502DED187DE67A000075F9 /* GustavusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GustavusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E502DF0187DE67A000075F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E502DF2187DE67A000075F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1E502DF4187DE67A000075F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1E502DF8187DE67A000075F9 /* GustavusApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GustavusApp-Info.plist"; sourceTree = "<group>"; };
+		1E502DF8187DE67A000075F9 /* GustavusApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GustavusApp-Info.plist"; path = "Miscellaneous/GustavusApp-Info.plist"; sourceTree = "<group>"; };
 		1E502DFA187DE67A000075F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1E502DFC187DE67A000075F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1E502DFE187DE67A000075F9 /* GustavusApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GustavusApp-Prefix.pch"; sourceTree = "<group>"; };
-		1E502DFF187DE67A000075F9 /* GAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAAppDelegate.h; sourceTree = "<group>"; };
-		1E502E00187DE67A000075F9 /* GAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAAppDelegate.m; sourceTree = "<group>"; };
+		1E502DFC187DE67A000075F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Miscellaneous/main.m; sourceTree = "<group>"; };
+		1E502DFE187DE67A000075F9 /* GustavusApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GustavusApp-Prefix.pch"; path = "Miscellaneous/GustavusApp-Prefix.pch"; sourceTree = "<group>"; };
+		1E502DFF187DE67A000075F9 /* GAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAAppDelegate.h; path = Miscellaneous/GAAppDelegate.h; sourceTree = "<group>"; };
+		1E502E00187DE67A000075F9 /* GAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GAAppDelegate.m; path = Miscellaneous/GAAppDelegate.m; sourceTree = "<group>"; };
 		1E502E03187DE67A000075F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		1E502E06187DE67A000075F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		1E502E08187DE67A000075F9 /* GAMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAMasterViewController.h; sourceTree = "<group>"; };
-		1E502E09187DE67A000075F9 /* GAMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAMasterViewController.m; sourceTree = "<group>"; };
+		1E502E08187DE67A000075F9 /* GAMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAMasterViewController.h; path = Controller/GAMasterViewController.h; sourceTree = "<group>"; };
+		1E502E09187DE67A000075F9 /* GAMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GAMasterViewController.m; path = Controller/GAMasterViewController.m; sourceTree = "<group>"; };
 		1E502E0E187DE67A000075F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1E502E14187DE67A000075F9 /* GustavusAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GustavusAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E502E15187DE67A000075F9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1E502E1D187DE67A000075F9 /* GustavusAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GustavusAppTests-Info.plist"; sourceTree = "<group>"; };
 		1E502E1F187DE67A000075F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E502E21187DE67A000075F9 /* GustavusAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GustavusAppTests.m; sourceTree = "<group>"; };
-		1E502E2C187DE7B2000075F9 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
-		1E502E2D187DE7B2000075F9 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
-		1E502E2E187DE7B2000075F9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		1E502E2F187DE7B2000075F9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		1E502E30187DE7B2000075F9 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
-		1E502E31187DE7B2000075F9 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
-		1E502E32187DE7B2000075F9 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
-		1E502E33187DE7B2000075F9 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
-		1E502E34187DE7B2000075F9 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
-		1E502E35187DE7B2000075F9 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
-		1E502E3B187DE89F000075F9 /* gustavus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gustavus.pdf; sourceTree = "<group>"; };
+		1E502E2C187DE7B2000075F9 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+MD5.h"; path = "Classes/UIImage+PDF/NSData+MD5.h"; sourceTree = "<group>"; };
+		1E502E2D187DE7B2000075F9 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+MD5.m"; path = "Classes/UIImage+PDF/NSData+MD5.m"; sourceTree = "<group>"; };
+		1E502E2E187DE7B2000075F9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "Classes/UIImage+PDF/NSString+MD5.h"; sourceTree = "<group>"; };
+		1E502E2F187DE7B2000075F9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "Classes/UIImage+PDF/NSString+MD5.m"; sourceTree = "<group>"; };
+		1E502E30187DE7B2000075F9 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFView.h; path = "Classes/UIImage+PDF/PDFView.h"; sourceTree = "<group>"; };
+		1E502E31187DE7B2000075F9 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFView.m; path = "Classes/UIImage+PDF/PDFView.m"; sourceTree = "<group>"; };
+		1E502E32187DE7B2000075F9 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+PDF.h"; path = "Classes/UIImage+PDF/UIImage+PDF.h"; sourceTree = "<group>"; };
+		1E502E33187DE7B2000075F9 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+PDF.m"; path = "Classes/UIImage+PDF/UIImage+PDF.m"; sourceTree = "<group>"; };
+		1E502E34187DE7B2000075F9 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Image.h"; path = "Classes/UIImage+PDF/UIView+Image.h"; sourceTree = "<group>"; };
+		1E502E35187DE7B2000075F9 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Image.m"; path = "Classes/UIImage+PDF/UIView+Image.m"; sourceTree = "<group>"; };
+		1E502E3B187DE89F000075F9 /* gustavus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = gustavus.pdf; path = Images/gustavus.pdf; sourceTree = "<group>"; };
 		1E502E85187E2A13000075F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1E5B079818844B0F000578F5 /* GABuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingViewController.h; sourceTree = "<group>"; };
-		1E5B079918844B0F000578F5 /* GABuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingViewController.m; sourceTree = "<group>"; };
+		1E5B079818844B0F000578F5 /* GABuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GABuildingViewController.h; path = Controller/GABuildingViewController.h; sourceTree = "<group>"; };
+		1E5B079918844B0F000578F5 /* GABuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GABuildingViewController.m; path = Controller/GABuildingViewController.m; sourceTree = "<group>"; };
 		1E5B07A31884ADF9000578F5 /* buildings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = buildings.plist; sourceTree = "<group>"; };
-		1E9D2E6718899E6100D91FCD /* GABuildingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABuildingManager.h; sourceTree = "<group>"; };
-		1E9D2E6818899E6100D91FCD /* GABuildingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABuildingManager.m; sourceTree = "<group>"; };
-		1EB085E3188C687900DD1224 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3ParallaxScrollView.h; sourceTree = "<group>"; };
-		1EB085E4188C687900DD1224 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3ParallaxScrollView.m; sourceTree = "<group>"; };
-		1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chapel-Winter@2x.png"; sourceTree = "<group>"; };
+		1E9D2E6718899E6100D91FCD /* GABuildingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GABuildingManager.h; path = Model/GABuildingManager.h; sourceTree = "<group>"; };
+		1E9D2E6818899E6100D91FCD /* GABuildingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GABuildingManager.m; path = Model/GABuildingManager.m; sourceTree = "<group>"; };
+		1EB085E3188C687900DD1224 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3ParallaxScrollView.h; path = ../Classes/A3ParallaxScrollView/A3ParallaxScrollView.h; sourceTree = "<group>"; };
+		1EB085E4188C687900DD1224 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3ParallaxScrollView.m; path = ../Classes/A3ParallaxScrollView/A3ParallaxScrollView.m; sourceTree = "<group>"; };
+		1EB085E8188C7FCD00DD1224 /* Chapel-Winter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Chapel-Winter@2x.png"; path = "Images/Chapel-Winter@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				1E5B07A31884ADF9000578F5 /* buildings.plist */,
-				1E502E3B187DE89F000075F9 /* gustavus.pdf */,
 				1E502DF8187DE67A000075F9 /* GustavusApp-Info.plist */,
 				1E502DF9187DE67A000075F9 /* InfoPlist.strings */,
 				1E502DFC187DE67A000075F9 /* main.m */,
@@ -273,6 +272,7 @@
 		1EB1AC8B188F237A00E7CE18 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1E502E3B187DE89F000075F9 /* gustavus.pdf */,
 				1E09B5B51891AED8005C875A /* Building Images */,
 			);
 			name = Images;
