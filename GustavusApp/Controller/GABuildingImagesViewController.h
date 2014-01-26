@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DARecycledScrollView.h"
+#import "DARecycledTileView.h"
+#import "GAImageTileView.h"
 
-@interface GABuildingImagesViewController : UIViewController
+@interface GABuildingImagesViewController : UIViewController <DARecycledScrollViewDataSource>
+
+@property (strong, nonatomic) NSArray *images;
+@property (readonly, strong, nonatomic) DARecycledScrollView *scrollView;
 
 @end
