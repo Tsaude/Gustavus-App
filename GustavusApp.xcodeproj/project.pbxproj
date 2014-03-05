@@ -10,7 +10,6 @@
 		1E1053CB1891B46700FB472B /* oldMain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053CA1891B46700FB472B /* oldMain@2x.png */; };
 		1E1053D11891DF2200FB472B /* oldMain.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053D01891DF2200FB472B /* oldMain.rtf */; };
 		1E1053D31891E10800FB472B /* sample.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053D21891E10800FB472B /* sample.rtf */; };
-		1E1053D61891F52B00FB472B /* GABuildingImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */; };
 		1E1053EA1892175C00FB472B /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053E01892175C00FB472B /* 1.jpg */; };
 		1E1053EB1892175C00FB472B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053E11892175C00FB472B /* 2.jpg */; };
 		1E1053EC1892175C00FB472B /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053E21892175C00FB472B /* 3.jpg */; };
@@ -21,7 +20,6 @@
 		1E1053F11892175C00FB472B /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053E71892175C00FB472B /* 8.jpg */; };
 		1E1053F21892175C00FB472B /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053E81892175C00FB472B /* 9.jpg */; };
 		1E1053F31892175C00FB472B /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1053E91892175C00FB472B /* 10.jpg */; };
-		1E1053F61892183200FB472B /* GAImageTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1053F51892183200FB472B /* GAImageTileView.m */; };
 		1E2461921896CBBA000859E9 /* sfaArt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24618F1896CBBA000859E9 /* sfaArt@2x.png */; };
 		1E2461931896CBBA000859E9 /* sfaMusic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2461901896CBBA000859E9 /* sfaMusic@2x.png */; };
 		1E2461941896CBBA000859E9 /* sfaTheater@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2461911896CBBA000859E9 /* sfaTheater@2x.png */; };
@@ -165,8 +163,6 @@
 		1E1053CA1891B46700FB472B /* oldMain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "oldMain@2x.png"; path = "Images/oldMain@2x.png"; sourceTree = "<group>"; };
 		1E1053D01891DF2200FB472B /* oldMain.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = oldMain.rtf; sourceTree = "<group>"; };
 		1E1053D21891E10800FB472B /* sample.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = sample.rtf; sourceTree = "<group>"; };
-		1E1053D41891F52B00FB472B /* GABuildingImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GABuildingImagesViewController.h; path = Controller/GABuildingImagesViewController.h; sourceTree = "<group>"; };
-		1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GABuildingImagesViewController.m; path = Controller/GABuildingImagesViewController.m; sourceTree = "<group>"; };
 		1E1053E01892175C00FB472B /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		1E1053E11892175C00FB472B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		1E1053E21892175C00FB472B /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -177,8 +173,6 @@
 		1E1053E71892175C00FB472B /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		1E1053E81892175C00FB472B /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		1E1053E91892175C00FB472B /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
-		1E1053F41892183200FB472B /* GAImageTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAImageTileView.h; path = View/GAImageTileView.h; sourceTree = "<group>"; };
-		1E1053F51892183200FB472B /* GAImageTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAImageTileView.m; path = View/GAImageTileView.m; sourceTree = "<group>"; };
 		1E24618F1896CBBA000859E9 /* sfaArt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sfaArt@2x.png"; sourceTree = "<group>"; };
 		1E2461901896CBBA000859E9 /* sfaMusic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sfaMusic@2x.png"; sourceTree = "<group>"; };
 		1E2461911896CBBA000859E9 /* sfaTheater@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sfaTheater@2x.png"; sourceTree = "<group>"; };
@@ -408,8 +402,6 @@
 		1E1053F71892183800FB472B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1E1053F41892183200FB472B /* GAImageTileView.h */,
-				1E1053F51892183200FB472B /* GAImageTileView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -417,8 +409,6 @@
 		1E50172618860683006A6071 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1E1053D41891F52B00FB472B /* GABuildingImagesViewController.h */,
-				1E1053D51891F52B00FB472B /* GABuildingImagesViewController.m */,
 				1E502E08187DE67A000075F9 /* GAMasterViewController.h */,
 				1E502E09187DE67A000075F9 /* GAMasterViewController.m */,
 				1E5B079818844B0F000578F5 /* GABuildingViewController.h */,
@@ -867,7 +857,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E1053F61892183200FB472B /* GAImageTileView.m in Sources */,
 				1E5B079A18844B0F000578F5 /* GABuildingViewController.m in Sources */,
 				1ECE83761898868600C21320 /* GASourcesViewController.m in Sources */,
 				1E502E37187DE7B2000075F9 /* NSString+MD5.m in Sources */,
@@ -880,7 +869,6 @@
 				1E502E38187DE7B2000075F9 /* PDFView.m in Sources */,
 				1E502E39187DE7B2000075F9 /* UIImage+PDF.m in Sources */,
 				1E502E36187DE7B2000075F9 /* NSData+MD5.m in Sources */,
-				1E1053D61891F52B00FB472B /* GABuildingImagesViewController.m in Sources */,
 				1E501729188606D8006A6071 /* Building.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1021,7 +1009,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GustavusApp/GustavusApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "GustavusApp/miscellaneous/GustavusApp-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GustavusApp/Miscellaneous/GustavusApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "";
@@ -1040,7 +1028,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GustavusApp/GustavusApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "GustavusApp/miscellaneous/GustavusApp-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GustavusApp/Miscellaneous/GustavusApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "";
