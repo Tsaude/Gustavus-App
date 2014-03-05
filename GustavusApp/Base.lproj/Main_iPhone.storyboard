@@ -25,7 +25,7 @@
         <!--Building View Controller-->
         <scene sceneID="Csc-35-9i2">
             <objects>
-                <viewController storyboardIdentifier="buildingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i24-EA-FKG" customClass="GABuildingViewController" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="i24-EA-FKG" customClass="GABuildingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I0m-rW-X6A"/>
                         <viewControllerLayoutGuide type="bottom" id="jFS-JG-CHJ"/>
@@ -33,55 +33,77 @@
                     <view key="view" contentMode="scaleToFill" id="gjb-Vv-kb8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adw-Ou-uYY" customClass="A3ParallaxScrollView">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="adw-Ou-uYY" firstAttribute="leading" secondItem="gjb-Vv-kb8" secondAttribute="leading" id="GzD-bx-SMX"/>
-                            <constraint firstAttribute="trailing" secondItem="adw-Ou-uYY" secondAttribute="trailing" id="mGJ-yO-6MO"/>
-                            <constraint firstItem="adw-Ou-uYY" firstAttribute="top" secondItem="I0m-rW-X6A" secondAttribute="bottom" id="nLM-zv-zFV"/>
-                            <constraint firstItem="jFS-JG-CHJ" firstAttribute="top" secondItem="adw-Ou-uYY" secondAttribute="bottom" id="t00-5a-Dlh"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Vte-Zg-Efd">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="86J-Jk-iNQ"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="scrollView" destination="adw-Ou-uYY" id="2jr-tX-gbU"/>
+                        <segue destination="xc0-5K-Shp" kind="push" identifier="sources" id="Jv0-I8-WmU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXB-oA-9BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="90"/>
+            <point key="canvasLocation" x="1139" y="90"/>
         </scene>
-        <!--Building Images View Controller-->
-        <scene sceneID="SKo-Jv-EHj">
+        <!--Navigation Controller-->
+        <scene sceneID="bl3-nd-nJe">
             <objects>
-                <viewController storyboardIdentifier="buildingImages" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S2J-8M-Dfq" customClass="GABuildingImagesViewController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="buildingViewController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y3D-5s-sHu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Bs-iz-7ra">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i24-EA-FKG" kind="relationship" relationship="rootViewController" id="vqV-Rb-21c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MzY-Y3-LnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="90"/>
+        </scene>
+        <!--Sources View Controller-->
+        <scene sceneID="sdM-JP-nXh">
+            <objects>
+                <viewController id="xc0-5K-Shp" customClass="GASourcesViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qTv-sv-cLM"/>
-                        <viewControllerLayoutGuide type="bottom" id="7XD-yN-14u"/>
+                        <viewControllerLayoutGuide type="top" id="0Aq-jX-fBr"/>
+                        <viewControllerLayoutGuide type="bottom" id="bxz-RE-3wl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wzm-Yu-XOe">
+                    <view key="view" contentMode="scaleToFill" id="deh-j6-bQ8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehU-lO-FgM" customClass="DARecycledScrollView">
-                                <rect key="frame" x="0.0" y="20" width="320" height="225"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBz-6L-VAa">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SBz-6L-VAa" firstAttribute="top" secondItem="0Aq-jX-fBr" secondAttribute="bottom" id="9p1-Ql-Zv2"/>
+                            <constraint firstItem="bxz-RE-3wl" firstAttribute="top" secondItem="SBz-6L-VAa" secondAttribute="bottom" id="9tQ-vK-C07"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eJt-w7-sqQ"/>
                     <connections>
-                        <outlet property="scrollView" destination="ehU-lO-FgM" id="iqh-eo-vo6"/>
+                        <outlet property="textView" destination="SBz-6L-VAa" id="VSz-xa-mo3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n1v-Us-uOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUp-ui-Q4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="90"/>
+            <point key="canvasLocation" x="1552" y="90"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

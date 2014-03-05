@@ -6,13 +6,12 @@
 //  Copyright (c) 2014 Tucker Saude. All rights reserved.
 //
 
-#import "A3ParallaxScrollView.h"
+
+
 #import "GABuildingViewController.h"
 
+
 @interface GABuildingViewController ()
-
-
-@property (weak, nonatomic) IBOutlet A3ParallaxScrollView *scrollView;
 
 
 @end
@@ -22,6 +21,7 @@
     UINavigationBar * _navBar;
     UITableView * _tableView;
     UIImageView * _imageView;
+    A3ParallaxScrollView * _scrollView;
 
 }
 
@@ -34,19 +34,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    [self buildNavBar];
+    //[self buildNavBar];
+    [self setUpNavBar];
     [self buildImageView];
     [self buildTextView];
     [self buildTableView];
     [self buildScrollView];
 
 }
+
+-(void)setUpNavBar{
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop
+                                                                                target:self
+                                                                                action:@selector(dismissBuildingView)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+    [self.navigationItem setTitle:self.building.title];
+    
+}
 -(void)buildScrollView{
-    [self.scrollView addSubview:_imageView withAcceleration:(CGPoint){0.5f, 0.5f}];
-    [self.scrollView addSubview:_textView];
-    [self.scrollView addSubview:_tableView];
-    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, _textView.frame.size.height +_imageView.frame.size.height*.75+_tableView.frame.size.height)];
+    _scrollView = [[A3ParallaxScrollView alloc] initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-20)];
+    [_scrollView addSubview:_imageView withAcceleration:(CGPoint){0.5f, 0.5f}];
+    [_scrollView addSubview:_textView];
+    [_scrollView addSubview:_tableView];
+    [_scrollView setContentSize:CGSizeMake(self.view.frame.size.width, _textView.frame.size.height +_imageView.frame.size.height*.75f+_tableView.frame.size.height)];
+    [self.view addSubview:_scrollView];
 }
 -(void)buildNavBar{
     _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
@@ -111,15 +122,19 @@
     //CGFloat width = [UIScreen mainScreen].bounds.size.width;
     //CGRect rect = [content boundingRectWithSize:CGSizeMake(width, 10000) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
     //CGSize textSize = rect.size;
-    _textView= [[UITextView alloc] initWithFrame:CGRectMake(0, (_imageView.frame.size.height*.75), [[UIScreen mainScreen] bounds].size.width, textSize.height)];
+    CGRect frameRect = CGRectMake(0, (_imageView.frame.size.height*.75), [[UIScreen mainScreen] bounds].size.width, textSize.height);
+    _textView= [[UITextView alloc] initWithFrame:frameRect];
     [_textView setAttributedText:content];
     [_textView setDelegate:self];
     [_textView setScrollEnabled:NO];
     [_textView setUserInteractionEnabled:NO];
     [_textView sizeToFit];
+    [_textView setFrame:CGRectMake(_textView.frame.origin.x, _textView.frame.origin.y, [UIScreen mainScreen].bounds.size.width, _textView.frame.size.height)];
+    //
+    //[_textView set]
 }
 -(void)buildTableView{
-    CGFloat tableViewHeight = 100;
+    CGFloat tableViewHeight = 50;
     CGFloat tableViewy = (_imageView.frame.size.height*.75)+ _textView.frame.size.height;
     CGRect tableViewFrame = CGRectMake(0, tableViewy, [UIScreen mainScreen].bounds.size.width, tableViewHeight);
     
@@ -130,13 +145,14 @@
     _tableView.showsHorizontalScrollIndicator = NO;
     _tableView.showsVerticalScrollIndicator = NO;
     _tableView.bounces = NO;
-    _tableView.rowHeight = tableViewHeight/2;
+    _tableView.rowHeight = tableViewHeight;
     [_tableView setDelegate:self];
     [_tableView setDataSource:self];
+    [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
 }
 
 - (void)dismissBuildingView {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+    [self.navigationController.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 
 
@@ -156,12 +172,13 @@
     }
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"Photos";
+        cell.textLabel.text = @"Sources";
     }
-    
+    /*
     if (indexPath.row == 1) {
         cell.textLabel.text = @"Sources";
     }
+     */
     
     return cell;
 }
@@ -171,15 +188,20 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 1;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        NSLog(@"row 0 has been tapped!");
+        /*NSLog(@"row 0 has been tapped!");
+        
+        
+        
+         */
         UITableViewCell * cell = [_tableView cellForRowAtIndexPath:indexPath];
         [cell setHighlighted:NO];
         [_tableView reloadData];
+        [self performSegueWithIdentifier:@"sources" sender:self];
         
     }
     
@@ -190,6 +212,17 @@
         [_tableView reloadData];
         
     }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    GABuildingViewController * buildingViewController = sender;
+    NSLog(@"%@", buildingViewController.building.title);
+    
+    GASourcesViewController * sources = segue.destinationViewController;
+    [sources.navigationItem setTitle:@"Sources"];
+    [sources setBuilding:self.building];
+    
+
 }
 
 @end

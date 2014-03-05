@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "Building.h"
+#import "A3ParallaxScrollView.h"
+#import "GASourcesViewController.h"
+
 
 @interface GABuildingViewController : UIViewController <UITextViewDelegate, UITableViewDelegate ,UITableViewDataSource>
 
 @property (strong, nonatomic) Building * building;
 
-
+- (void)dismissBuildingView;
 
 
 

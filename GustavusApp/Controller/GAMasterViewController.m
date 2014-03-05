@@ -30,14 +30,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     //nav bar
-    _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
-    [_navBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-     _navBar.shadowImage = [UIImage new];
-    [_navBar setBarTintColor:[UIColor darkTextColor]];
-    _navBar.translucent = YES;
-    UINavigationItem * titleItem = [[UINavigationItem alloc] initWithTitle:@"map"];
-    _navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
-    _navBar.items = @[titleItem];
+//    _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+//    [_navBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//     _navBar.shadowImage = [UIImage new];
+//    [_navBar setBarTintColor:[UIColor darkTextColor]];
+//    _navBar.translucent = YES;
+//    UINavigationItem * titleItem = [[UINavigationItem alloc] initWithTitle:@"map"];
+//    _navBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+//    _navBar.items = @[titleItem];
     
     //setting up map
     CGRect screenRect = self.view.bounds;
@@ -98,10 +98,12 @@
             button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
             [button setFrame:CGRectMake([(NSNumber*)framePointArray[0] floatValue], [(NSNumber*)framePointArray[1] floatValue], [(NSNumber*)framePointArray[2] floatValue], [(NSNumber*)framePointArray[3] floatValue])];
             [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self action:@selector(buttonHeld:) forControlEvents:UIControlEventTouchDown];
+            [button addTarget:self action:@selector(buttonLetGo:) forControlEvents:UIControlEventTouchCancel|UIControlEventTouchDragOutside];
             [button setTag:[(NSNumber*)framePointArray[4] intValue]-1];
             CALayer * layer = [button layer];
             [layer setMasksToBounds:YES];
-            [layer setCornerRadius:0.0]; //when radius is 0, the border is a rectangle
+            [layer setCornerRadius:10.0]; //when radius is 0, the border is a rectangle
             [layer setBorderWidth:1.0];
             [layer setBorderColor:[[UIColor grayColor] CGColor]];
             
@@ -116,17 +118,38 @@
     
 }
 
+-(IBAction)buttonLetGo:(id)sender{
+    UIButton * button = (UIButton *)sender;
+    [button setBackgroundColor:[UIColor clearColor]];
+}
+
+-(IBAction)buttonHeld:(id)sender{
+    
+    UIButton * button = (UIButton *)sender;
+    [button setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:.3]];
+    
+}
 
 -(IBAction)buttonClicked:(id)sender{
     UIButton * button = (UIButton * )sender;
-    
+    [button setBackgroundColor:[UIColor clearColor]];
     NSLog(@"button clicked %ld", (long)button.tag);
     Building * building = [[Building alloc]initWithName:[GAMasterViewController caseArrayforButtons][button.tag]];
     NSLog(@"%@", building.title);
     UIStoryboard * storyboard = self.storyboard;
-    GABuildingViewController * buildingViewController =(GABuildingViewController *)[storyboard instantiateViewControllerWithIdentifier:@"buildingViewController"];
-    [buildingViewController setBuilding:building];
-    [self presentViewController:buildingViewController animated:YES completion:nil];
+    UINavigationController * navigationController =(UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"buildingViewController"];
+    GABuildingViewController * buildingViewController;
+    if([[navigationController topViewController] isKindOfClass:[GABuildingViewController class]]){
+        buildingViewController = (GABuildingViewController *)[navigationController topViewController];
+        [buildingViewController setBuilding:building];
+        
+    }
+    else
+    {
+        NSLog(@"top controller is not GABuildingViewController");
+    }
+
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 
@@ -141,7 +164,7 @@
                       @"sfaMusic",
                       @"sfaTheater",
                       @"paMatHall",
-                      @"prarieView",
+                      @"prairieView",
                       @"southwest",
                       @"nobel",
                       @"con",
@@ -158,7 +181,7 @@
                       @"campusCenter",
                       @"lund",
                       @"football",
-                      @"soccer",
+                      @"collegeView",
                       @"coed",
                       @"uhler",
                       @"admin",
