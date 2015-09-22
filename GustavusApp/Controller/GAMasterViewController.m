@@ -65,8 +65,6 @@
             CALayer * layer = [button layer];
             [layer setMasksToBounds:YES];
             [layer setCornerRadius:10.0]; //when radius is 0, the border is a rectangle
-            [layer setBorderWidth:1.0];
-            [layer setBorderColor:[[UIColor grayColor] CGColor]];
             
             [self.gustavusMap addSubview:button];
             
